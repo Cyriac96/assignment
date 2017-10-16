@@ -3,7 +3,7 @@
 #' @param dframe the dataframe you want to save as .csv
 #' @param filename the name and path you want for your new csv file
 #' @param row.names false
-#' @param ...
+#' @param ... other parameters
 #'
 #' @return file that is saved
 #' @export
@@ -11,6 +11,10 @@
 #' @importFrom utils write.csv2
 #' @import assertthat
 #' @examples
+#' data(iris)
+#' save_as_csv(iris,filename="plop.csv")
+#'
+#'
 
 save_as_csv <- function(dframe, filename, row.names = FALSE, ...){
   assert_that(is.data.frame(dframe))

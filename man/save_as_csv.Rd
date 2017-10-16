@@ -14,7 +14,7 @@ save_as_csv(dframe, filename, row.names = FALSE, ...)
 
 \item{row.names}{false}
 
-\item{...}{}
+\item{...}{other parameters}
 }
 \value{
 file that is saved
@@ -22,4 +22,10 @@ file that is saved
 \description{
 Function: save_as_csv
 This function saves the dataframe as a .csv
+}
+\examples{
+data(iris)
+save_as_csv(iris,filename="plop.csv")
+
+
 }
