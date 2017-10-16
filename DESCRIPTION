@@ -13,4 +13,8 @@ Imports: roxygen2,
     assertthat,
     dplyr,
     utils,
-    readxl
+    readxl,
+    prenoms,
+    ggplot2,
+    dygraphs,
+    tidyr
