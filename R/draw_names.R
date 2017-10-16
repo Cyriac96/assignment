@@ -14,6 +14,7 @@
 #' draw_names_dygraph(names = "Pierre")
 #'
 draw_names_dygraph <- function(names){
+  assert_that(is.character(names))
   prenoms::prenoms %>%
     group_by(year, name) %>%
     summarise (total = sum(n)) %>%

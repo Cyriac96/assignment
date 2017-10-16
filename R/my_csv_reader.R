@@ -16,8 +16,9 @@
 #'
 #'
 my_csv_reader <- function(folder){
+  assert_that(is.dir(folder))
   l <- list.files(path = folder, pattern = ".*csv$"
-                  , full.names = TRUE)#
+                  , full.names = TRUE)
   result <- lapply(l,read.csv2)
   return(result)
 }

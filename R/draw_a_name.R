@@ -15,6 +15,8 @@
 #' draw_a_name(the_sex = "M", the_name = "Pierre")
 #'
 draw_a_name <- function(the_sex, the_name) {
+  assert_that(is.character(the_sex))
+  assert_that(is.character(the_name))
   prenoms::prenoms %>% filter(sex == the_sex, name == the_name) %>%
     group_by(year) %>% summarise(total=sum(n)) %>%
     ggplot( aes(x = year, y = total)) + geom_line()
