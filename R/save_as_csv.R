@@ -5,10 +5,11 @@
 #' @param row.names false
 #' @param ...
 #'
-#' @return
+#' @return file that is saved
 #' @export
 #' @import dplyr
-#' @import asserthat
+#' @importFrom utils write.csv2
+#' @import assertthat
 #' @examples
 
 save_as_csv <- function(dframe, filename, row.names = FALSE, ...){
