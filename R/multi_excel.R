@@ -5,6 +5,7 @@
 #'
 #' @return imports sheets
 #' @import readxl
+#' @import assertthat
 #' @export
 #'
 #' @examples

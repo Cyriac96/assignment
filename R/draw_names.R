@@ -8,6 +8,7 @@
 #' @import dplyr
 #' @import dygraphs
 #' @import tidyr
+#' @import assertthat
 #' @export
 #'
 #' @examples

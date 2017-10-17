@@ -11,6 +11,7 @@
 #' @import dplyr
 #' @import dygraphs
 #' @import tidyr
+#' @import assertthat
 #' @examples
 #' draw_a_name(the_sex = "M", the_name = "Pierre")
 #'
